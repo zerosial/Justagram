@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justagram</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="grid grid-flow-row h-screen place-items-center">
+        <div class="w-[26rem] h-[36rem] grid grid-cols-1 gap-4 p-8">
+          <div
+            class="border-2 rounded-sm p-8 h-[28rem] grid grid-flow-row justify-items-center gap-2"
+          >
+            <div class="font-['Lobster'] text-5xl">Justagram</div>
+            <input
+              class="w-64 mt-4 border-2 rounded-sm text-xs pl-4"
+              placeholder="전화번호, 사용자 이름 또는 이메일"
+              type="text"
+            />
+            <input
+              class="w-64 mb-4 border-2 rounded-sm text-xs pl-4"
+              placeholder="비밀번호"
+              type="password"
+            />
+            <button class="bg-blue-200 rounded-md h-7 w-64" disabled>
+              <span class="text-white font-black"> 로그인 </span>
+            </button>
+            <div>
+              <span
+                class="bg-slate-400 h-[0.5px] w-24 inline-block mb-1"
+              ></span>
+              <span class="text-slate-400 font-black m-2 text-sm">또는</span>
+              <span
+                class="bg-slate-400 h-[0.5px] w-24 inline-block mb-1"
+              ></span>
+            </div>
+            <div>
+              <img src="./src/img/facebook.png" class="w-4 inline mb-1" />
+              <span class="text-blue-800 font-black">Facebook으로 로그인</span>
+            </div>
+            <div class="text-sm">비밀번호를 잊으셧나요?</div>
+          </div>
+          <div class="h-16 p-5 pl-[4.5rem] border-2 rounded-sm">
+            <span>계정이 없으신가요?</span>
+            <a href="/" class="text-blue-500 font-black">가입하기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
